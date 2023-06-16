@@ -37,7 +37,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "https://uop-solarcar.github.io/",
+              "baseHref": "https://uop-solarcar.github.io",
               "budgets": [
                 {
                   "type": "initial",
