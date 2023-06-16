@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "https://uop-solarcar.github.io/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -38,6 +37,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://uop-solarcar.github.io/",
               "budgets": [
                 {
                   "type": "initial",
@@ -53,6 +53,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "baseHref": "/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
