@@ -1,5 +1,6 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import {MediaMatcher} from '@angular/cdk/layout';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,9 @@ import {MediaMatcher} from '@angular/cdk/layout';
 export class AppComponent {
   title = 'uop-solarcar-website';
   mobileQuery: MediaQueryList;
-
+  isSidebarOpen: boolean = false;
+  showAboutDetail = false;
+  showDocumentationDetail = false;
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
@@ -20,5 +23,9 @@ export class AppComponent {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  toggleClick() {
+    this.isSidebarOpen = !this.isSidebarOpen;
   }
 }

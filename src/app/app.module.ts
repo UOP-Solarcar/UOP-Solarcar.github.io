@@ -9,7 +9,6 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { NgIf } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,8 +16,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-
-
 
 @NgModule({
   declarations: [
@@ -33,7 +30,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatBadgeModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule,
     MatButtonModule,
     NgIf,
     MatToolbarModule,
