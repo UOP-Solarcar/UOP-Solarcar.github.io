@@ -1,3 +1,8 @@
+.content-container {
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cover-image {
   width: 100%;
   background-size: cover;
@@ -18,6 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
   color: #fff; /* Adjust the caption text color as needed */
   h1 {
@@ -26,9 +32,117 @@
   }
 }
 
-.content-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.intro-card {
+  margin-top: -20px;
+  background-color: #161729;
+  color: whitesmoke;
 }
 
+.intro-header {
+  p {
+    font-size: 50px;
+  }
+  justify-content: center;
+  padding: 30px;
+  display: flex;
+  text-align: center;
+  margin: 0px 100px;
+  line-height: normal;
+}
+.intro-content {
+  p{
+    font-size: 30px;
+  }
+  padding: 30px;
+  display: flex;
+  text-align: center;
+  margin: 0px 100px 50px 100px;
+  line-height: normal;
+}
+
+.video-card {
+  margin-top: -20px;
+  background-color: #F6B223;
+  color: #161729;
+}
+
+.video-header {
+  p {
+    font-size: 50px;
+  }
+  justify-content: center;
+  padding: 30px;
+  display: flex;
+  text-align: center;
+  margin: 0px 100px;
+  line-height: normal;
+}
+.video-content {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 100px 50px 100px;
+  line-height: normal;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 50%; /* 16:9 aspect ratio for the video */
+  height: 0;
+}
+
+.overlay-header{
+  white-space: nowrap;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 50px 100px 0 100px;
+  line-height: normal;
+}
+
+.grid-item {
+  
+  padding: 20px;
+}
+
+.grid-item h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 30px;
+}
+
+.contact-card {
+  margin-top: -20px;
+  background-color: #FFFFFF;
+  color: #161729;
+}
+
+.contact-header {
+  p {
+    font-size: 50px;
+  }
+  justify-content: center;
+  padding: 30px;
+  display: flex;
+  text-align: center;
+  margin: 0px 100px;
+  line-height: normal;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin: 0px 100px 50px 100px;
+}
+.custom-icon {
+  background-color: #161729;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 50%;
+  margin: 10px;
+}

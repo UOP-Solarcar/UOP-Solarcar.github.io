@@ -2,7 +2,10 @@
     "content":{},
     "image":{
         "coverPicture":{
-            "homePage": "assets/image/home.jpg"
+            "homePage": "assets/image/home.jpg",
+            "about":"assets/image/about.jpg",
+            "documentation":"assets/image/documentation.png",
+            "value":"assets/image/value.jpg"
         }
     }
 }

@@ -8,14 +8,14 @@ import { DataService } from '../data.service';
 })
 export class DocumentationComponent {
   data: any;
-  url: any;
+  docImage: any;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getData().subscribe(data => {
       this.data = data;
-      this.url = data.image.coverPicture.homePage
-      console.log(this.url)
+      this.docImage = data.image.coverPicture.documentation
+      console.log(this.docImage)
     });
   }
 }

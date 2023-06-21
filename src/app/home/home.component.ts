@@ -9,14 +9,16 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
   data: any;
-  url: any;
+  homePageImage: any;
+  valueImage:any;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getData().subscribe(data => {
       this.data = data;
-      this.url = data.image.coverPicture.homePage
-      console.log(this.url)
+      this.homePageImage = data.image.coverPicture.homePage
+      this.valueImage = data.image.coverPicture.value
+      console.log(this.homePageImage)
     });
   }
 }
