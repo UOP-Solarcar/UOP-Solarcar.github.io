@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-documentation',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent {
+  data: any;
+  url: any;
+  constructor(private dataService: DataService) { }
 
+  ngOnInit() {
+    this.dataService.getData().subscribe(data => {
+      this.data = data;
+      this.url = data.image.coverPicture.homePage
+      console.log(this.url)
+    });
+  }
 }
